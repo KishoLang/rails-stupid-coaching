@@ -1,0 +1,27 @@
+<h1>ANSWER PAGE</h1>
+
+<style>
+  .question, .answer {
+    background-color: lightblue;
+    border: 2px solid black;
+    width: 200px;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 4px;
+
+  }
+
+</style>
+<div class="question">
+  <p>"<%= @question %>"</p>
+  <p>-You</p>
+
+</div>
+
+<div class="answer">
+  <p>"<%= @answer %>"</p>
+  <p>-Stupid Coach</p>
+</div>
+
+
+<p class="back-link"><%= link_to "Ask another question", ask_path %></p>
